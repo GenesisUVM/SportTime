@@ -32,6 +32,9 @@
             <img src="../IMG/track.jpg" alt="imagen principal olimpiadas">
         </div>
 
+        <button class="next-button"> <img src="../IMG/flecha-izq.png" alt="" class="next-img" width="50"></button>
+        <button class="previous-button"><img src="../IMG/flecha-dere.png" alt="" class="before-img" width="50"> </button>
+
     </section>
 
     <footer class="footer">
@@ -39,5 +42,45 @@
         <h2>Genesis Castillo 2024</h2>
     </footer>
     
+    <script>
+        const carousel = document.querySelector('.carrusel');
+        const images = carousel.querySelectorAll('img');
+        let currentIndex = 0;
+    
+        function showImage(index) {
+        images.forEach((image, i) => {
+            if (i === index) {
+            image.style.display = 'block';
+            } else {
+            image.style.display = 'none';
+            }
+        });
+        }
+    
+        function nextImage() {
+        currentIndex++;
+        if (currentIndex >= images.length) {
+            currentIndex = 0;
+        }
+        showImage(currentIndex);
+        }
+    
+        function previousImage() {
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = images.length - 1;
+        }
+        showImage(currentIndex);
+        }
+    
+        // Event listeners para los botones de siguiente y anterior
+        document.querySelector('.next-button').addEventListener('click', nextImage);
+        document.querySelector('.previous-button').addEventListener('click', previousImage);
+    
+        // Mostrar la primera imagen al cargar la página
+        showImage(currentIndex);
+    </script>
+
+
 </body>
 </html>
