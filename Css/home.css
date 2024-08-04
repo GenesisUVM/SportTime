@@ -58,16 +58,21 @@ nav li a:focus{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 2rem;
 }
 
 /*Estilos Home*/
 
 .tituloHome{
-    margin: 1.5rem;
+  width: 80%;
+    margin: auto;
     font-size: 2rem;
+    padding: 1rem;
 }
 .textoHome{
-    margin: 1.5rem;
+  width: 80%;
+    margin: auto;
+    padding: 1rem;
 }
 
 
@@ -83,7 +88,7 @@ nav li a:focus{
   
   .carrusel img {
     margin: auto;
-    width: 80%;
+    width: 70%;
     height: 80%;
     object-fit: cover;
   }
