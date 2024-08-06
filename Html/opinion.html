@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/opinion.css">
+    <title>SportTime</title>
+</head>
+<body>
+    <header>
+        <div class="container-logo">
+            <img src="../IMG/tenis.png" alt="" class="logo" width="30" height="30">
+            <h3>SportTime</h3>
+        </div>
+        <nav class="navBar">
+            
+            <ul class="list-nav">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./articulos.html">Articulos</a></li>
+                <li><a href="./atletas.html">Atletas </a></li>
+                <li><a href="./datos.html">Datos Curiosos</a></li>
+                <li><a href="#">Opiniones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container-form">
+        <form class="formulario">
+            <div class="input">
+              <label for="name" id="name-label">Nombre</label>
+              <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required></input>
+            </div>
+          <div class="input">
+             <label for="email" id="email-label">Email</label>
+             <input  type="email" name="email" id="email" placeholder="Ingresa tu correo" required></input>
+          </div>
+          <div class="input">
+             <label for="number" id="number-label">Telefono</label>
+              <input type="number" name="age" id="number" min="11" max="11" placeholder="Ingresa tu numero de contacto" required ></input>
+          </div>
+          <div class="form-group">
+            <select class="disciplina" name="" required>
+              <option disabled selected value>Selecciona la disciplina de la que quieres opinar</option>
+              <option value="year 1°"></option>
+              <option value="year 2°">Boxeo</option>
+              <option value="year 3°">3°</option>
+              <option value="year 4°">4°</option>
+              <option value="year 5°">5°</option>
+            </select>
+          </div>
+         
+          <div>
+             <p></p>
+             <textarea name="comment" class="comment" placeholder="Ingresa tu comentario..."></textarea>
+          </div>
+          <div>
+             <button type="submit" id="submit" class="submit">
+                Submit
+             </button>
+            </div>
+          </form>
+    </section>
+    <footer class="footer">
+      <h3>SportTime</h3>
+      <h2>Genesis Castillo 2024</h2>
+  </footer>
+</body>
+</html>

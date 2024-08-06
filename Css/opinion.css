@@ -65,37 +65,59 @@ nav li a:focus{
     margin-bottom: 2rem;
 }
 
-/*Estilos seccion articulos*/
+/*Estilos Formulario*/
 
-.container-articulos{
+.container-form{
+    height: 100vh;
+    display: flex;
+}
+  
+  .formulario{
+    
+    background: #fff;
+    width: 50%;
     margin: auto;
-    width: 70%;
-    padding: 2rem;
-}
-
-.contenedorGrid1, .contenedorGrid2{
-    display: grid;
-    grid-template-columns:repeat(2, 1fr) ;
-    background-color: #CCC3C3;
-    border-radius: 1rem;
-    margin: 1rem;
-    padding: 1.5rem;
-}
-
-.contenedorGrid1 .textArticulos {
-    grid-column: 1/2;
-}
-.contenedorGrid1 .imgArticulos{
-    grid-column: 2/2;
-    width: 95%;
-}
-
-.contenedorGrid2 .textArticulos{
-    grid-column: 2/2;
-    grid-row: 1/1;
-}
-.contenedorGrid2 .imgArticulos{
-    grid-column: 1/2;
-    grid-row: 1/1;
-    width: 95%;
-}
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+    height: auto;
+    padding: 20px;
+  }
+  .input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    font-size: 20px;
+  }
+  input{
+    margin-top: 1em;
+    padding: 0.5em;
+    font-size: 16px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .form-group p{
+    font-size: 20px;  
+  }
+  .disciplina {
+    padding: 0.5em 0;
+    font-size: 20px;
+  }
+  .comment{
+    width: 100%;
+    height: 80px;
+    margin-bottom:10px;
+    font-size:20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .submit{
+    padding:0.5em 0.8em ;
+    background:#111;
+    color:#fff;
+    border:none;
+  }
+  
+  
+  
