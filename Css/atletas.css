@@ -78,10 +78,10 @@ nav li a:focus{
 .buttonImg button{
     width: 80%;
     margin: 1rem;
-    border-color: #D9D9D9;
+   /* border-color: #D9D9D9;
     box-shadow: none;
     border-style: none;
-    background-color: #D9D9D9;
+    background-color: #D9D9D9;*/
 }
 
 .imgAtlets{
@@ -92,6 +92,7 @@ nav li a:focus{
 
 .ventanaEmergente{
     position: fixed;
+    z-index: 999;
     background-color: #9E7474;
     width: 60%;
     margin: auto;
@@ -99,8 +100,18 @@ nav li a:focus{
     padding: 1rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    opacity: 0;
 }
 
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.contenido{
+    overflow: hidden;
+    position: relative;
+}
 .ventanaEmergente img{
     grid-column: 1/2
 }
